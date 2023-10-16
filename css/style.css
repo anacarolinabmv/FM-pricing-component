@@ -4,6 +4,8 @@
   text-align: center;
   font-size: 3.2rem;
   line-height: normal;
+  margin-bottom: 4rem;
+  margin-top: 7rem;
 }
 
 .card__heading {
@@ -11,6 +13,7 @@
   text-align: center;
   font-size: 1.8rem;
   line-height: 2.8rem;
+  margin-bottom: 2rem;
 }
 
 .card__price {
@@ -19,6 +22,7 @@
   font-weight: 700;
   line-height: 7.1rem;
   letter-spacing: -2.16px;
+  margin-bottom: 3rem;
 }
 
 *,
@@ -37,10 +41,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   background-color: #f6f6fe;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
 }
 
@@ -60,15 +60,17 @@ body {
 }
 
 .card {
-  flex: 1;
-  max-width: 35rem;
+  width: 100%;
+  width: 35rem;
   height: 45rem;
-  padding: 3rem;
+  padding: 3rem 3rem 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
   background-color: #fff;
+  color: #6e728e;
+  font-size: 15px;
+  line-height: 28px;
 }
 .card__list {
   display: flex;
@@ -141,12 +143,12 @@ body {
 }
 
 .btn {
-  margin-top: 3rem;
+  margin-top: auto;
   background-image: linear-gradient(135deg, #a3a8f0, #696fdd);
   width: 100%;
   border-radius: 6px;
   text-align: center;
-  padding: 1.4rem 0;
+  padding: 0.8rem 0;
   color: #fff;
   cursor: pointer;
   font-size: 1.3rem;

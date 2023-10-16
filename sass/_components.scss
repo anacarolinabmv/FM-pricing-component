@@ -1,13 +1,17 @@
 .card {
-  flex: 1;
-  max-width: 35rem;
+  width: 100%;
+  width: 35rem;
   height: 45rem;
-  padding: 3rem;
+  padding: 3rem 3rem 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
   background-color: #fff;
+
+  color: #6e728e;
+
+  font-size: 15px;
+  line-height: 28px;
 
   &__list {
     display: flex;
@@ -90,12 +94,12 @@
 }
 
 .btn {
-  margin-top: 3rem;
+  margin-top: auto;
   background-image: $purple-gradient;
   width: 100%;
   border-radius: 6px;
   text-align: center;
-  padding: 1.4rem 0;
+  padding: 0.8rem 0;
   color: #fff;
   cursor: pointer;
   font-size: 1.3rem;
