@@ -3,12 +3,31 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  animation: fadeIn 350ms ease-in;
 }
 
 .cards-container {
   display: flex;
 }
 
-.toggle-btn {
-  margin-bottom: 4rem;
+.toggle-btn-container {
+  margin-bottom: 8rem;
+
+  color: $Light-Grayish-Blue;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+
+  display: flex;
+  gap: 2.4rem;
+  height: 3.2rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
