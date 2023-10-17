@@ -23,8 +23,6 @@
   line-height: 7.1rem;
   letter-spacing: -2.16px;
   margin-bottom: 3rem;
-  display: flex;
-  align-items: center;
 }
 @media (max-width: 56.25em) {
   .card__price {
@@ -75,6 +73,7 @@ body {
   justify-content: center;
   padding: 4rem 2rem;
   width: 100%;
+  max-width: 120rem;
 }
 @media (max-width: 48.5em) {
   .cards-container {
@@ -158,6 +157,10 @@ body {
   height: 1px;
   opacity: 0.25;
   background-color: #6d708d;
+}
+.card__price {
+  display: flex;
+  align-items: center;
 }
 .card--left {
   border-radius: 1rem 0 0 1rem;

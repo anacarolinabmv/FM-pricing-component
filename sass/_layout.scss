@@ -12,6 +12,7 @@
   justify-content: center;
   padding: 4rem 2rem;
   width: 100%;
+  max-width: 120rem;
 
   @media (max-width: 48.5em) {
     flex-direction: column;

@@ -65,6 +65,11 @@
     }
   }
 
+  &__price {
+    display: flex;
+    align-items: center;
+  }
+
   &--left {
     border-radius: 1rem 0 0 1rem;
   }
@@ -97,7 +102,7 @@
       color: inherit;
       animation: fadeIn 200ms ease-in;
     }
-    // }
+
     .card__heading {
       color: inherit;
     }
