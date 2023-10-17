@@ -1,16 +1,30 @@
 .card {
-  width: 100%;
-  width: 36rem;
   height: 45rem;
   padding: 3rem 3rem 4rem;
+  flex: 1 0 36rem;
+
+  background-color: #fff;
+  color: $Grayish-Blue;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
-  color: $Grayish-Blue;
 
-  font-size: 15px;
-  line-height: 28px;
+  @media (max-width: 56.25em) {
+    flex: 1 0 32rem;
+  }
+  @media (max-width: 48.5em) {
+    width: 60%;
+    border-radius: 1rem !important;
+  }
+  @media (max-width: 31.25em) {
+    width: 80%;
+  }
+  @media (max-width: 23.4375em) {
+    width: 100%;
+  }
 
   &__list {
     display: flex;
@@ -60,23 +74,28 @@
     color: #fff;
     position: relative;
     z-index: 1;
+    background-image: $purple-gradient;
 
     .background {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
-      height: 150%;
       background-image: $purple-gradient;
       transform: translateY(-2.5rem);
       height: 50rem;
       border-radius: 1rem;
       z-index: -1;
+
+      @media (max-width: 48.5em) {
+        display: none;
+      }
     }
     .card__price {
       color: inherit;
       animation: fadeIn 200ms ease-in;
     }
+    // }
     .card__heading {
       color: inherit;
     }
@@ -84,19 +103,6 @@
     .card__list-item::after,
     .card__list-item::before {
       background-color: currentColor;
-    }
-
-    .btn {
-      background-color: #fff;
-      background-image: none;
-      color: #6d72de;
-      border: 1px solid transparent;
-
-      &:hover {
-        background-color: transparent;
-        color: #fff;
-        border-color: currentColor;
-      }
     }
   }
 }
@@ -116,6 +122,19 @@
   overflow: hidden;
   z-index: 1;
   border: 1px solid transparent;
+
+  &--white {
+    background-color: #fff;
+    background-image: none;
+    color: #6d72de;
+    border: 1px solid transparent;
+
+    &:hover {
+      background-color: transparent;
+      color: #fff;
+      border-color: currentColor;
+    }
+  }
 
   &--purple {
     &:hover {
@@ -195,4 +214,9 @@
 
 .hide {
   display: none;
+}
+
+.dollar-sign {
+  font-size: 5rem;
+  margin-right: 0.8rem;
 }

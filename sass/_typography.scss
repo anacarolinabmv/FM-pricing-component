@@ -22,4 +22,12 @@
   line-height: 7.1rem;
   letter-spacing: -2.16px;
   margin-bottom: 3rem;
+
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 56.25em) {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+  }
 }
