@@ -22,4 +22,15 @@ body {
   font-weight: 700;
   background-color: $Very-Light-Grayish-Blue;
   min-height: 100vh;
+  background: top right url(../images/bg-top.svg), bottom left url(../images/bg-bottom.svg);
+  background-repeat: no-repeat;
+
+  @media (max-width: 48.5em) {
+    background: top right url(../images/bg-top.svg);
+    background-repeat: no-repeat;
+    background-position: right -25rem top 0;
+  }
+  //   @media (max-width: 31.25em) {
+  //     background-position: 300% 0;
+  //   }
 }

@@ -58,6 +58,15 @@ body {
   font-weight: 700;
   background-color: #f6f6fe;
   min-height: 100vh;
+  background: top right url(../images/bg-top.svg), bottom left url(../images/bg-bottom.svg);
+  background-repeat: no-repeat;
+}
+@media (max-width: 48.5em) {
+  body {
+    background: top right url(../images/bg-top.svg);
+    background-repeat: no-repeat;
+    background-position: right -25rem top 0;
+  }
 }
 
 .container {
